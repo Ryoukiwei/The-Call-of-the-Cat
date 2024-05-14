@@ -10,8 +10,8 @@
         "soundUrl": "/sounds/cat_long.mp3"
     },
     {
-        "name": "zebra",
-        "imageUrl": "/images/zebra.png",
-        "soundUrl": "/sounds/zebra.mp3"
+        "name": "beaver",
+        "imageUrl": "/images/beaver.png",
+        "soundUrl": "/sounds/beaver.mp3"
     }
 ]
