@@ -15,7 +15,7 @@ function StartScreen({ onStartGame }: { onStartGame: () => void }) {
     return (
         <div className="start-screen" style={startStyle}>
             <h1>The Call of the Cat: A Nighttime Adventure</h1>
-            <button onClick={handleStartClick}>Start Game</button>
+            <button onClick={handleStartClick}><b>Start Game</b></button>
         </div>
     )
 }

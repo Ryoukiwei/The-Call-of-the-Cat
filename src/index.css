@@ -2,3 +2,25 @@ body {
   color: white;
   background-color: black;
 }
+
+button {
+  margin: 5px;
+  color: white;
+  font-size: 30px;
+  background-color: rgba(76, 76, 76, 0.35);
+  padding: 5px 15px;
+}
+
+.button:active {
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+::marker {
+  color: rgb(79, 79, 79);
+}
+
+::selection {
+  background-color: rgba(76, 76, 76, 0.45);
+  color: rgb(92, 26, 225);
+}
