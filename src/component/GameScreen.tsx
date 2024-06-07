@@ -18,7 +18,7 @@ function GameScreen({ onGameOver }: GameScreenProps) {
     const [animals, setAnimals] = useState<AnimalProps[]>([]);
     const [lastPlayTime, setLastPlayTime] = useState(0);
     const [score, setScore] = useState(0);
-    const [timeLeft, setTimeLeft] = useState(3); // 5 minutes
+    const [timeLeft, setTimeLeft] = useState(300); // 5 minutes
     const [gameOver, setGameOver] = useState(false);
 
     useEffect(() => {
