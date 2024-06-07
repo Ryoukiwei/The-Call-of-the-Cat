@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Animal from "./Animal";
 import ScoreBoard from "./ScoreBoard";
+import Timer from "./Timer/Timer";
 import animalsData from "../assets/animeData.json";
 
 type AnimalProps = {
@@ -9,10 +10,16 @@ type AnimalProps = {
     visible: boolean;
 };
 
-function GameScreen() {
+type GameScreenProps = {
+    onGameOver: (score: number) => void;
+};
+
+function GameScreen({ onGameOver }: GameScreenProps) {
     const [animals, setAnimals] = useState<AnimalProps[]>([]);
     const [lastPlayTime, setLastPlayTime] = useState(0);
     const [score, setScore] = useState(0);
+    const [timeLeft, setTimeLeft] = useState(3); // 5 minutes
+    const [gameOver, setGameOver] = useState(false);
 
     useEffect(() => {
         const initialAnimals = animalsData.map(animal => ({
@@ -22,6 +29,12 @@ function GameScreen() {
         }));
         setAnimals(initialAnimals);
     }, []);
+
+    useEffect(() => {
+        if (gameOver) {
+            onGameOver(score);
+        }
+    }, [gameOver, onGameOver, score]);
 
     function generatePosition(): { x: number; y: number } {
         const maxX = window.innerWidth - 200;
@@ -82,6 +95,7 @@ function GameScreen() {
     return (
         <div className="game-screen" onMouseMove={handleMouseMove}>
             <ScoreBoard score={score} />
+            <Timer timeLeft={timeLeft} setTimeLeft={setTimeLeft} setGameOver={setGameOver} gameOver={gameOver} />
             {animals.map((animal, index) => (
                 <Animal
                     key={index}

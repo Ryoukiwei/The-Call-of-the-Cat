@@ -1,0 +1,28 @@
+.game-over-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.game-over-message {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.final-score {
+    font-size: 1.5em;
+}
+
+.share-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
