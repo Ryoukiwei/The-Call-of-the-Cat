@@ -1,0 +1,8 @@
+.timer {
+    font-size: 1em;
+    font-weight: bold;
+    border-style: dashed;
+    border-width: 1px;
+    margin: 10px 0;
+    width: 105px;
+}
