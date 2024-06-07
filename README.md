@@ -1,13 +1,19 @@
-# The Call of the Cat: A Nighttime Adventure
+# 貓的呼喚：夜間冒險
 
-A fun and interactive game where you need to find and click on the randomly appearing cat images while avoiding other animal images.
+<div style="text-align: center;"><a href="./doc/README-en.md">English</a></div>
 
-## How to play
+這是一款有趣而頗具互動性的遊戲，你需要在遊戲中找到並點擊隨機出現的貓圖片，同時避免點擊其他動物圖片
 
-Move your mouse around the screen to hear animal sounds, and the closer you are to an animal, the louder the sound.
+![Image](./Game-Screenshot.png)
 
-Click on the cats to score points, but be careful not to click on other animals or you'll lose points.
+## 如何玩
 
-Once you've found all the cats, the game will reset with new animal positions.
+移動你的滑鼠在畫面上移動，聽動物的聲音，越靠近動物，聲音就越大  
+點擊貓咪來得分，但要小心不要點擊其他動物，否則你將失去分數
 
-Enjoy this nighttime adventure and see how high you can score! 😉
+享受這個夜間冒險，看看你能否找出所有貓咪
+
+## 特色
+
+- 版本 1.0.3
+  - 惡臭河狸的嗓門特別大聲，它將妨礙冒險者找到所有的貓咪
