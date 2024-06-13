@@ -66,7 +66,7 @@ Set-ExecutionPolicy RemoteSigned
 #### 2. Run the Script (build-docker.ps1)
 
 ```powershell
-./build-docker.ps1
+.\build-docker.ps1
 ```
 
 ### Other Platforms

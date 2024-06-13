@@ -69,7 +69,7 @@ Set-ExecutionPolicy RemoteSigned
 #### 2. 運行腳本 (build-docker.ps1)
 
 ```powershell
-./build-docker.ps1
+.\build-docker.ps1
 ```
 
 ### 其他
