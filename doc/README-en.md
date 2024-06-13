@@ -47,6 +47,44 @@ Then open the following URL in your browser:
 
 > <http://localhost:5173/>
 
+## Using Docker
+
+You can also use the provided scripts to build Docker images.
+
+### On Windows
+
+If you are using Windows PowerShell, you can run `build-docker.ps1`.
+
+#### 1. Allow PowerShell Script Execution
+
+You can allow script execution by setting the PowerShell execution policy. Run PowerShell as an administrator and execute the following command:
+
+```powershell
+Set-ExecutionPolicy RemoteSigned
+```
+
+#### 2. Run the Script (build-docker.ps1)
+
+```powershell
+./build-docker.ps1
+```
+
+### Other Platforms
+
+If you are a Mac or Linux user, or if you are using Git Bash on Windows, run build-docker.sh.
+
+#### 1. Ensure Script Execution Permissions
+
+```bash
+chmod +x build-docker.sh
+```
+
+#### 2. Run the Script (build-docker.sh)
+
+```bash
+./build-docker.sh
+```
+
 ## Features
 
 - Version 1.0.3

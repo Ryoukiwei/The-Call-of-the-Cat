@@ -1,0 +1,17 @@
+node_modules
+
+*.log
+.env
+
+.git
+.gitignore
+
+Dockerfile
+docker-compose.yml
+
+*.sh
+*.ps1
+
+doc
+Game-Screenshot.png
+README.md
